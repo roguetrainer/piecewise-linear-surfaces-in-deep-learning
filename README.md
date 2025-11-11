@@ -223,7 +223,7 @@ For questions, suggestions, or discussions about this demonstration, please open
 
 ## 📄 License
 
-[Choose an appropriate license - MIT, Apache 2.0, etc.]
+MIT
 
 ---
 
