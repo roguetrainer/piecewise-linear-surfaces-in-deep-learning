@@ -1,0 +1,43 @@
+🧠 Ever wondered what neural networks REALLY compute? Here's something that was not intuitive to me:
+
+Deep learning models with ReLU activations are PIECEWISE LINEAR functions! 🤯
+
+Yes, despite modeling incredibly complex patterns, these networks are just stitching together LINEAR PIECES. Each "piece" corresponds to a different activation pattern - which neurons are ON vs OFF. 😮
+
+🔍 What does this mean?
+
+✅ A network with n neurons can create up to 2^n different linear regions
+✅ Within each region, the function is EXACTLY linear (f(x) = Ax + b)
+✅ Boundaries between regions are where neurons switch states
+✅ More regions = more expressive power
+
+🎯 Why should you care?
+
+This fundamental property explains:
+→ How neural networks achieve UNIVERSAL APPROXIMATION
+→ Why ADVERSARIAL EXAMPLES exist (they exploit region boundaries)
+→ How MODEL PRUNING works (merge similar regions)
+→ Why LINEAR MODE CONNECTIVITY happens between trained models
+
+I asked #ClaudeCode to create an INTERACTIVE DEMO with visualizations, Jupyter notebooks, and complete mathematical explanations. You can literally SEE the linear pieces and watch how they combine to create complex functions! 📊
+
+Perfect for:
+🎓 Students learning deep learning fundamentals
+🔬 Researchers exploring neural network geometry  
+💼 Practitioners seeking deeper model understanding
+👨‍🏫 Teachers explaining network behavior
+
+Repo: https://github.com/roguetrainer/piecewise-linear-surfaces-in-deep-learning
+
+The repository includes:
+📓 Interactive Jupyter notebook
+🐍 Python demonstration scripts
+📊 Visualizations
+📚 Theoretical overview
+⚙️ Automated setup scripts
+
+This is one of those insights that fundamentally changes how you think about neural networks. Once you see it, you can't unsee it! 👁️
+
+#DeepLearning #MachineLearning #AI #NeuralNetworks #DataScience #ArtificialIntelligence #MLEducation #TechEducation #ComputerScience #OpenSource
+
+P.S. The demo works with NumPy and Matplotlib - no heavy frameworks needed! Clone, run, and explore in minutes! ⚡
